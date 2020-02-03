@@ -2,8 +2,13 @@
 # Show work on all problems.  Manually finding the answer doesn't count
 
 # PROBLEM 1 (Using List Comprehensions - 8pts)
+
+print("PROBLEM 1")
+
 # Use list comprehensions to do the following:
 # a) Make a list of numbers from 1 to 100
+
+print("\n1a")
 
 my_list = []
 
@@ -14,12 +19,21 @@ print(my_list)
 
 # b) Make a list of even numbers from 20 to 40
 
-
-# c) Make a list of squares from 1 to 100 (1 ** 2 to 100 ** 2)
+print("\n1b")
 
 my_list = []
 
-for x in range(101):
+for i in range(10, 21):
+    my_list.append(2 * i)
+
+print(my_list)
+
+# c) Make a list of squares from 1 to 100 (1 ** 2 to 100 ** 2)
+
+print("\n1c")
+my_list = []
+
+for x in range(1, 101):
     my_list.append(x ** 2)
 
 print(my_list)
@@ -27,13 +41,9 @@ print(my_list)
 my_list = [x ** 2 for x in range(101)]
 
 # d) Make a list of all positive numbers in my_list below.
-my_list1 = [-77, -78, 82, 81, -40, 2, 62, 65, 74, 48, -37, -52, 90, -84, -79, -45, 47, 60, 35, -18]
 
-for f in range(21):
-    if f > 0:
-        my_list1.append(f)
-print(my_list1)
-
+print("\n1d")
+my_list = [-77, -78, 82, 81, -40, 2, 62, 65, 74, 48, -37, -52, 90, -84, -79, -45, 47, 60, 35, -18]
 
 
 # PROBLEM 2 (Import the number list - 3pts)
