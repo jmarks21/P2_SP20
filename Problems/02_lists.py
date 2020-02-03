@@ -45,18 +45,45 @@ my_list = [x ** 2 for x in range(101)]
 print("\n1d")
 my_list = [-77, -78, 82, 81, -40, 2, 62, 65, 74, 48, -37, -52, 90, -84, -79, -45, 47, 60, 35, -18]
 
+my_positive_numbers = [x for x in my_list if x > 0]
+print(my_positive_numbers)
 
 # PROBLEM 2 (Import the number list - 3pts)
+
+print("\nPROBLEM 2\n")
+
 # The Problems directory contains a file called "number_list.py"
 # import this file which contains num_list
 # Print the last 5 numbers in num_list
 
+import number_list
+print(number_list.num_list[-5:])
 
 # PROBLEM 3 (List functions and methods - 8pts)
+
+print("\nPROBLEM 3\n")
+
 # Find and print the highest number in num_list (1pt)
+
+print(max(number_list.num_list))
+
 # Find and print the lowest number in num_list (1pt)
+
+print(min(number_list.num_list))
+
 # Find and print the average of num_list (2pts)
+
+sum = sum(number_list.num_list)
+number = len(number_list.num_list)
+average = sum / number
+print(average)
+
 # Remove the lowest number from num_list (2pt)
+
+num = number_list.num_list.index(min(number_list.num_list))
+del number_list.num_list[841]
+print(number_list.num_list)
+
 # Create and print a new list called top_ten which contains only the 10 highest numbers in num_list(2pts)
 
 
